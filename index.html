@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>SMART BUSINESS - Unir pour la digitalisation</title>
 </head>
+
 <body>
     <!-- Header -->
-    <header id="navbar">
-        <nav>
-            <div class="logo">SMART <span>BUSINESS</span></div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#propos">À propos</a></li>
-                <li><a href="#prod">Produits & Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-              
-            </ul>
-            <div class="burger" id="burger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </nav>
-    </header>
+   <header id="navbar">
+    <nav>
+        <!-- Logo + Texte alignés -->
+        <div class="logo">
+            <img src="./images/logo-smart.png" alt="SMART BUSINESS Logo" class="logo-img">
+            <span class="logo-text">SMART <span>BUSINESS</span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#propos">À propos</a></li>
+            <li><a href="#prod">Produits & Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -33,152 +44,194 @@
             <p>Unir pour la digitalisation</p>
             <button class="cta-button"><a href="#prod">Découvrir nos solutions</a></button>
         </div>
-        
+
         <!-- Waves animées -->
         <div class="wave mt-5">
             <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="#2D8C1F" class="wave1"></path>
-                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".3" fill="#2D8B9F" class="wave2"></path>
-                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="#2D8B7F" opacity=".35" class="wave3"></path>
-                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="#2D8B7F" opacity=".4" class="wave4"></path>
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" fill="#2D8C1F" class="wave1"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".3" fill="#2D8B9F" class="wave2"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    fill="#2D8B7F" opacity=".35" class="wave3"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    fill="#2D8B7F" opacity=".4" class="wave4"></path>
             </svg>
         </div>
     </section>
-
     <!-- Section À propos -->
     <section id="propos">
-
-        
-    
-        <!-- Conteneur des deux blocs -->
         <div class="propos-container">
-            
+
             <div class="floating-block">
-                <h2>Qui nous sommes </h2>
+                <h2>Qui nous sommes</h2>
                 <p>
-                    SMART BUSINESS est une entreprise dédiée à la digitalisation des petites et moyennes entreprises (PME) à Madagascar.
-                    Nous proposons des solutions simples, accessibles et adaptées au contexte local pour aider les entrepreneurs à mieux gérer leurs activités et à devenir plus compétitifs.
-                    Notre approche combine technologie, formation et accompagnement pour permettre à chaque entreprise de réussir sa transformation numérique.
+                    SMART BUSINESS est une entreprise dédiée à la digitalisation des petites et moyennes entreprises
+                    (PME) à Madagascar.
+                    Nous proposons des solutions simples, accessibles et adaptées au contexte local pour aider les
+                    entrepreneurs à mieux gérer leurs activités et à devenir plus compétitifs.
+                    Notre approche combine technologie, formation et accompagnement pour permettre à chaque entreprise
+                    de réussir sa transformation numérique.
                 </p>
                 <p>
-                   On veut  démocratiser l'accès aux solutions digitales et d'unir les acteurs 
+                    On veut démocratiser l'accès aux solutions digitales et d'unir les acteurs
                     économiques autour de valeurs communes : innovation, excellence et collaboration.
                 </p>
                 <p>
-                    Avec une équipe passionnée et des solutions sur mesure, nous transformons vos défis 
+                    Avec une équipe passionnée et des solutions sur mesure, nous transformons vos défis
                     en opportunités de croissance durable.
                 </p>
             </div>
-    
-            <div class="floating-block">
-                <h2>Notre mission </h2>
-                <p>
-                    La mission de SMART BUSINESS est de rendre la gestion d’entreprise simple, accessible et efficace pour les petites et moyennes entreprises malgaches. Nous souhaitons offrir à chaque entrepreneur, quel que soit son niveau en technologie, des outils modernes pour mieux organiser son activité, suivre ses performances et prendre de meilleures décisions.
 
-                    Notre solution tout-en-un facilite la gestion des ventes, des stocks, des finances et des ressources humaines grâce à une interface intuitive et adaptée au contexte local. Elle permet aux entreprises de gagner du temps, de limiter les erreurs et d’améliorer leur productivité.
-                    
-                    En parallèle, SMART BUSINESS accompagne les utilisateurs à travers des formations pratiques, un suivi personnalisé et un soutien continu. Nous aidons les entrepreneurs à maîtriser progressivement l’outil et à l’intégrer dans leur quotidien professionnel.
-                    
-                    À travers cette mission, nous contribuons à réduire la fracture numérique et à soutenir la modernisation des PME malgaches.
+            <div class="floating-block middle-block">
+                <h2>Notre mission</h2>
+                <p>
+                    La mission de SMART BUSINESS est de rendre la gestion d’entreprise simple, accessible et efficace
+                    pour les petites et moyennes entreprises malgaches. Nous souhaitons offrir à chaque entrepreneur,
+                    quel que soit son niveau en technologie, des outils modernes pour mieux organiser son activité,
+                    suivre ses performances et prendre de meilleures décisions.
                 </p>
-               
+                <p>
+                    Notre solution tout-en-un facilite la gestion des ventes, des stocks, des finances et des ressources
+                    humaines grâce à une interface intuitive et adaptée au contexte local. Elle permet aux entreprises
+                    de gagner du temps, de limiter les erreurs et d’améliorer leur productivité.
+                </p>
+                <p>
+                    En parallèle, SMART BUSINESS accompagne les utilisateurs à travers des formations pratiques, un
+                    suivi personnalisé et un soutien continu. Nous aidons les entrepreneurs à maîtriser progressivement
+                    l’outil et à l’intégrer dans leur quotidien professionnel.
+                </p>
+                <p>
+                    À travers cette mission, nous contribuons à réduire la fracture numérique et à soutenir la
+                    modernisation des PME malgaches.
+                </p>
             </div>
 
             <div class="floating-block">
-                <h2>Notre vision </h2>
+                <h2>Notre vision</h2>
                 <p>
-                    La vision de SMART BUSINESS est de devenir, d’ici 2035, la plateforme numérique de référence pour les petites et moyennes entreprises en Afrique, en particulier pour les jeunes entrepreneurs et les femmes. Nous aspirons à offrir un environnement où chaque entreprise, même la plus petite, peut accéder facilement à des outils modernes pour gérer et développer son activité.
-
-                    Nous voulons construire un écosystème digital inclusif qui simplifie la gestion quotidienne, renforce les compétences entrepreneuriales et crée de nouvelles opportunités économiques. À travers une solution intuitive, accessible et adaptée au contexte local, SMART BUSINESS souhaite contribuer à une croissance durable, à la réduction des inégalités numériques et à l’autonomisation des entrepreneurs.
-                    
-                    Notre ambition est d’accompagner la transformation digitale à grande échelle et de participer activement à l’émergence d’un tissu économique plus solide, innovant et compétitif en Afrique.
+                    La vision de SMART BUSINESS est de devenir, d’ici 2035, la plateforme numérique de référence pour
+                    les petites et moyennes entreprises en Afrique, en particulier pour les jeunes entrepreneurs et les
+                    femmes. Nous aspirons à offrir un environnement où chaque entreprise, même la plus petite, peut
+                    accéder facilement à des outils modernes pour gérer et développer son activité.
                 </p>
                 <p>
-                    Notre mission est de démocratiser l'accès aux solutions digitales et d'unir les acteurs 
+                    Nous voulons construire un écosystème digital inclusif qui simplifie la gestion quotidienne,
+                    renforce les compétences entrepreneuriales et crée de nouvelles opportunités économiques. À travers
+                    une solution intuitive, accessible et adaptée au contexte local, SMART BUSINESS souhaite contribuer
+                    à une croissance durable, à la réduction des inégalités numériques et à l’autonomisation des
+                    entrepreneurs.
+                </p>
+                <p>
+                    Notre ambition est d’accompagner la transformation digitale à grande échelle et de participer
+                    activement à l’émergence d’un tissu économique plus solide, innovant et compétitif en Afrique.
+                </p>
+                <p>
+                    Notre mission est de démocratiser l'accès aux solutions digitales et d'unir les acteurs
                     économiques autour de valeurs communes : innovation, excellence et collaboration.
                 </p>
                 <p>
-                    Avec une équipe passionnée et des solutions sur mesure, nous transformons vos défis 
+                    Avec une équipe passionnée et des solutions sur mesure, nous transformons vos défis
                     en opportunités de croissance durable.
                 </p>
             </div>
-            
+
         </div>
-
-    </div>
-    
     </section>
     <!-- Section Produits -->
 
-<section id="prod">
+  <section id="prod">
 
     <!-- Titre principal -->
     <h2 class="section-title">Nos Produits</h2>
 
     <div class="products-new">
-        
-        <!-- Produit 1 -->
+
+        <!-- Produit 1 - Application Mobile -->
         <div class="product-box">
             <h3>Application Mobile</h3>
 
-            div.
-            <video class="demo-video" src="/home/tiantsoa/Musique/smart/mobile.mp4" aut></video>
+            <video class="demo-video" 
+                   autoplay 
+                   loop 
+                   muted 
+                   playsinline 
+                   poster="videos/posters/mobile.jpg">
+                <source src="videos/mobile.webm" type="video/webm">
+                <source src="videos/mobile.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
 
             <a href="pdfs/manuel-application-mobile.pdf" class="download-btn" download>
                 Télécharger le manuel PDF
             </a>
         </div>
 
-        <!-- Produit 2 -->
+        <!-- Produit 2 - Application Web -->
         <div class="product-box">
             <h3>Application Web</h3>
 
-            <video class="demo-video" src="/home/tiantsoa/Musique/smart/web.mp4" controls></video>
+            <video class="demo-video" 
+                   autoplay 
+                   loop 
+                   muted 
+                   playsinline 
+                   poster="videos/posters/web.jpg">
+                <source src="videos/web.webm" type="video/webm">
+                <source src="videos/web.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
 
             <a href="pdfs/manuel-application-web.pdf" class="download-btn" download>
                 Télécharger le manuel PDF
             </a>
         </div>
 
-        <!-- Produit 3 -->
+        <!-- Produit 3 - Application Desktop -->
         <div class="product-box">
             <h3>Application Desktop</h3>
 
-            <video class="demo-video" src="/home/tiantsoa/Musique/smart/Ijeery.mp4" controls></video>
+            <video class="demo-video" 
+                   autoplay 
+                   loop 
+                   muted 
+                   playsinline 
+                   poster="videos/posters/desktop.jpg">
+                <source src="videos/desktop.webm" type="video/webm">
+                <source src="videos/desktop.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
 
             <a href="pdfs/manuel-application-desktop.pdf" class="download-btn" download>
                 Télécharger le manuel PDF
             </a>
         </div>
-
     </div>
-
 
     <!-- Section avantages -->
     <h2 class="section-title" style="margin-top: 6rem;">Nos Avantages</h2>
 
     <div class="advantages">
-
         <div class="adv-card">
             <h4>Gain de temps</h4>
             <p>Nos solutions offrent une rapidité et une fluidité adaptées à tous les environnements.</p>
         </div>
-
         <div class="adv-card">
             <h4>Accompagnement personnalisé</h4>
             <p>Un soutien complet, simple et personnalisé.</p>
         </div>
-
         <div class="adv-card">
             <h4>Sécurité renforcée</h4>
             <p>Protection avancée contre les cybermenaces et les attaques.</p>
         </div>
-
         <div class="adv-card">
             <h4>Personnalisation</h4>
             <p>Des fonctionnalités adaptées selon vos besoins spécifiques.</p>
         </div>
-
     </div>
 
 </section>
@@ -204,37 +257,37 @@
                 <button type="submit" class="submit-button">Envoyer</button>
             </form>
         </div>
-        
-        
+
+
 
     </section>
     <footer class="footer">
         <div class="footer-newsletter">
-            
+
         </div>
-    
+
         <div class="footer-content">
             <div class="footer-col">
                 <h3>SMART BUSINESS</h3>
                 <p>
                     Une société dédiée à la digitalisation et aux solutions technologiques modernes.
                 </p>
-             
+
             </div>
-    
+
             <div class="footer-col">
                 <h4>Contact</h4>
                 <p>Facebook : SMART BUSINESS</p>
                 <p>Téléphone : +261 34 10 062 55</p>
             </div>
-    
+
             <div class="footer-col">
                 <h4>Localisation </h4>
                 <p>Adresse :Farafangana BP 309</p>
             </div>
-    
-            
-    
+
+
+
             <div class="footer-col">
                 <h4>Politique de confidentialité des données</h4>
                 <ul>
@@ -245,16 +298,17 @@
                 </ul>
             </div>
         </div>
-    
+
         <div class="footer-bottom">
             <p>© 2025 SMART BUSINESS — Transformation digitale pour les petites et moyennes entreprises</p>
-            
+
         </div>
     </footer>
-    
-    
+
+
 
     <script src="js/index.js"></script>
     <script src="tailwind.js"></script>
 </body>
+
 </html>
